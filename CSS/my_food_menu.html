@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Food Menu</title>
+        <style>
+            body {
+                font-family: Arial;
+                background: #fff8f0;
+                padding: 30px;
+                text-align: center;
+            }
+
+            h1 {
+                colour: #e65c00;
+            }
+
+            /*Sibling Selector - style the paragraph right after h1 */
+            h1+p {
+                background: #ffe0b2;
+                padding: 10px 20px;
+                border-radius: 8px;
+                colour: #bf360c;
+                display: inline-block;
+
+            }
+
+            ul {
+                padding: 0;
+                margin-top: 20px;
+            }
+
+            /* Child Selector - style only direct li children of ul */
+            ul>li {
+                list-style: none;
+                font-style: 18px;
+                font-weight: bold;
+                colour: #5d4037;
+                padding: 10px 20px;
+                margin: 6px auto;
+                width: 260px;
+                background: #fff3e0;
+                border-radius: 8px;
+            }
+
+            ul li:nth-child(3) {
+                background: #ffe082;
+                clour: #e65c00;
+            }
+
+            .desc {
+                colour: #555;
+                margin-top: 28px;
+                font-size: 15px;
+                max-width: 400px;
+                margin-left: auto;
+            }
+        </style>
+    </head>
+</html>
