@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body { 
+                font-family: Arial, sans-serif;
+                background: aliceblue;
+                text-align: center;
+                padding: 30px;
+            }
+
+            h1 {
+                color: navy;
+            }
+
+            input {
+                padding: 8px;
+                margin: 5px;
+                border: 1px solid navy;
+                border-radius: 6px;
+                width: 220px;
+            }
+
+            button {
+                background-color: navy;
+                color: white;
+                padding: 10px 25px;
+                border: none;
+                border-radius: 20px;
+                cursor: pointer;
+            }
+
+            #timer {
+                color: grey;
+            }
+
+            </style>
+    </head>
+    <body>
+
+        <h1>Lucky Draw</h1>
+        <p>Enter your name and guess a number to win</p>
+
+        <input type="text" id="name" placeholder="Your name" required><br>
+        <p id="msg-name"></p>
+
+        <input type="number" id="guess" placeholder="Guess a number (1 to 5)"  min=1 max=10 required><br>
+        <p id="msg-guess"></p>
+
+        <button oneclick="checkForce()">Try My Luck!</button>
+        <p id="result"></p>
+        <p id="timer"></p>
+
+        <script>
+
+            var seconds = 0;
+            setIntervals(function() {
+                seconds = seconds + 1;
+            })
+        </script>
+</html>
